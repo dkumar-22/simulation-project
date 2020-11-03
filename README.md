@@ -1,4 +1,4 @@
-This is The Final Project Hosted on Github for Modelling And Simulation
+## This is The Final Project Hosted on Github for Modelling And Simulation
 
 Contents:
 
@@ -18,8 +18,9 @@ Languages:
 How To Run The Code:
 
 Clone or download the repository on your machine. 
-Run Bank.cpp file.
 
-NOTE: Edit the paths of the files suitably.
+Run **Bank.cpp** file.
+
+***NOTE: Edit the paths of the files suitably.***
 
 Thank You.
