@@ -203,7 +203,7 @@ df3.extend(lst_output)
 plt.plot(df3[1200:])
 
 df3=scaler.inverse_transform(df3).tolist()
-
+# df3.to_csv('final.csv')
 plt.plot(df3)
 plt.show()
 
