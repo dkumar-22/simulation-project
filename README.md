@@ -20,4 +20,6 @@ How To Run The Code:
 Clone or download the repository on your machine. 
 Run Bank.cpp file.
 
+NOTE: Edit the paths of the files suitably.
+
 Thank You.
