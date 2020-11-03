@@ -133,8 +133,9 @@ int main()
 			cout << "\n\n\t05. ALL ACCOUNT HOLDER LIST";
 			cout << "\n\n\t06. CLOSE AN ACCOUNT";
 			cout << "\n\n\t07. MODIFY AN ACCOUNT";
-			cout << "\n\n\t08. EXIT";
-			cout << "\n\n\tSelect Your Option (1-8) ";
+			cout << "\n\n\t08. MONTE CARLO STOCK PREDICTION";
+			cout << "\n\n\t09. EXIT";
+			cout << "\n\n\tSelect Your Option (1-9) ";
 			cin >> ch;
 			switch (ch)
 			{
@@ -170,13 +171,20 @@ int main()
 				modify_account(num);
 				break;
 			case '8':
+				system("cls");
+				cout << "\n******Stock Forecasting using Monte Carlo******";
+				cout << "\n\nAN EXTERNAL WEBPAGE WOULD OPEN. \n\n\tPRESS ANY KEY TO CONTINUE....";
+				getch();
+				system("start https://github.com/dkumar-22/simulation-project/blob/master/Monte%20Carlo%20Simulations.ipynb");
+				break;
+			case '9':
 				cout << "\n\n\tThanks for using Bank Management System";
 				goto xy;
 			default:
 				cout << "\n\n\tNot A Valid Option, Please choose a valid option\n";
 			}
 			cin.ignore();
-			cout << "\n\n\tPress any key to continue\n ";
+			cout << "\n\n\tPress any key to go to the main Menu\n ";
 			cin.get();
 		} while (ch);
 	}
@@ -187,12 +195,15 @@ int main()
 		system("cd C:\\Users\\Dhruv\\Desktop\\Shortcuts\\pro");
 		system("python stocks.py");
 		system("cls");
-		cout<<"\nProgram Ended Press Any Key to Continue.......";
+		cout << "\nProgram Ended Press Any Key to Continue.......";
 		getch();
 		system("cls");
 	}
-	xy:
-		cout<<"\n\tTHANKS FOR VISITING !!!\n\n\tHAVE A WONDERFUL DAY AHEAD!!!\n\n\n";
+xy:
+{
+	system("cls");
+	cout << "\n\tTHANKS FOR VISITING !!!\n\n\tHAVE A WONDERFUL DAY AHEAD!!!\n\n\n";
+}
 	return 0;
 }
 
@@ -380,10 +391,10 @@ void intro()
 	cout << "\n\n\n\tMODELLING AND SIMULATION PROJECT";
 	cout << "\n\n\n\nMADE BY :Dhruv Kashyap 2K19/CO/121 & Dhruv Kumar 2K19/CO/122\n";
 	cout << "\n\tDELHI TECHNOLOGICAL UNIVERSITY\n";
-	cout<<"\nPress Any Key to Enter the code....";
+	cout << "\nPress Any Key to Enter the code....";
 	getch();
 	system("cls");
 	cout << "\n*********************Menu************************ \n\nPRESS 1 TO ENTER THE BANKING SYSTEM \n\n******************************************** \n\nPRESS 2 TO VIEW STOCK MARKET FORECASTING PROGRAM \n\n********************************************";
-	cout << "\n";
+	cout << "\n\nYour Response: ";
 	cin >> choice;
 }
